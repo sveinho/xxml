@@ -1,0 +1,106 @@
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    max-width: 850px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+    line-height: 1.6; 
+    background: #f4f6f8; 
+    color: #2d3748; 
+    scroll-behavior: smooth; 
+}
+
+h1 { 
+    color: #1a202c; 
+    border-bottom: 2px solid #e2e8f0; 
+    padding-bottom: 10px; 
+}
+
+.search-box { 
+    width: 100%; 
+    padding: 14px; 
+    font-size: 16px; 
+    border: 2px solid #cbd5e0; 
+    border-radius: 8px; 
+    box-sizing: border-box; 
+    margin-bottom: 25px; 
+    outline: none; 
+}
+
+.search-box:focus { 
+    border-color: #3182ce; 
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); 
+}
+
+.file-card { 
+    background: white; 
+    border: 1px solid #e2e8f0; 
+    padding: 30px; 
+    margin-bottom: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+/* Visuell effekt når man klikker på en internlenke og hopper til et kort */
+.file-card:target { 
+    border-color: #3182ce; 
+    transform: scale(1.01); 
+    box-shadow: 0 0 15px rgba(66, 153, 225, 0.2); 
+}
+
+.file-path { 
+    font-size: 13px; 
+    color: #4a5568; 
+    font-family: monospace; 
+    background: #edf2f7; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    display: inline-block; 
+    margin-bottom: 10px; 
+}
+
+.meta-container { 
+    background: #ebf8ff; 
+    border-left: 4px solid #3182ce; 
+    padding: 12px 18px; 
+    margin: 15px 0; 
+    border-radius: 0 6px 6px 0; 
+    font-size: 14px; 
+}
+
+.meta-grid { 
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    gap: 4px 15px; 
+    font-family: monospace; 
+}
+
+.meta-key { 
+    color: #4a5568; 
+    font-weight: bold; 
+}
+
+.markdown-body { 
+    margin-top: 20px; 
+    border-top: 1px solid #e2e8f0; 
+    padding-top: 20px; 
+}
+
+.markdown-body a { 
+    color: #3182ce; 
+    font-weight: 500; 
+    text-decoration: none; 
+    border-bottom: 1px dashed #3182ce; 
+}
+
+.markdown-body a:hover { 
+    color: #2b6cb0; 
+    border-bottom-style: solid; 
+}
+
+.no-results { 
+    color: #718096; 
+    text-align: center; 
+    margin-top: 50px; 
+    font-size: 18px; 
+}
